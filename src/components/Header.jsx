@@ -1,12 +1,12 @@
 const Header = () => {
     return <nav className="header">
 
-            <section class="top-nav">
+            <section className="top-nav">
                 <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
+                <label className='menu-button-container' htmlFor="menu-toggle">
+                    <div className='menu-button'></div>
                 </label>
-                <ul class="menu">
+                <ul className="menu">
                     <li><a href="/#about">About</a> </li>
                     <li><a href="/#proyects">Proyects</a></li>
                     <li><a href="/#working">Working now</a></li>
@@ -30,6 +30,7 @@ const Header = () => {
             .header a {
                 color: var(--gray);
                 transition: .5s;
+                padding: .5rem;
             }
 
             .header a:hover{

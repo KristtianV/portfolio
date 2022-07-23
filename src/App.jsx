@@ -24,7 +24,7 @@ const App = () => {
         <div className="content">
             
             <Presentation width={width}/>
-            <About/>
+            <About width={width}/>
 
             <div className="working" id="working">
                 <h2>Working now</h2>
@@ -53,10 +53,11 @@ const App = () => {
         
 
         <style jsx>{`
-
             
             .content {
+                margin: auto;
                 padding: 0 12%;
+                max-width: 1020px;
             }
 
 

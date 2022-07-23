@@ -70,7 +70,7 @@ const Presentation = ({width}) => {
                 color: var(--ligth-green);
             }
 
-            .presentation h1:hover,h2:hover,h3:hover {
+            .presentation h1:hover,.presentation h2:hover,.presentation h3:hover {
                 text-shadow: 15px 15px 5px #160425;
             }
 
