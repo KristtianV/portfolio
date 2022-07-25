@@ -24,6 +24,7 @@ const App = () => {
         <div className="content">
             
             <Presentation width={width}/>
+            
             <About width={width}/>
 
             <div className="working" id="working">

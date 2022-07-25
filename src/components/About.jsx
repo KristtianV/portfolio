@@ -1,22 +1,30 @@
 import image from "../img/me.jfif";
+import SkillBar from "./SkillBar";
 
 const About = ({width}) => {
     
-    let minWidth = 700;
+    let minWidth = 800;
 
     return <div className="about" id="about">
         
         <h2>About Me</h2>
-        <div className="wrapper">
+        
+        <div className="info-wrapper">
+            
             <div className="info">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore fugiat quae sapiente atque eligendi dolorum, debitis odio quibusdam accusamus accusantium possimus! Quis quam laboriosam non sunt molestias in illo earum quibusdam, minima sequi, similique soluta cum. Eum assumenda, sunt laboriosam enim placeat non aliquam eius ad deserunt doloribus? Rerum aspernatur laborum at odit corporis inventore totam consequuntur vero officia molestias quod reprehenderit, veritatis dolore ad? Quibusdam reiciendis corrupti quidem unde aperiam. Ratione voluptates pariatur nihil vitae tempore, exercitationem cupiditate accusamus doloremque in quaerat sint, vel aliquam ab? Dignissimos quae quis temporibus modi vero illo sed maxime alias quia facere.</p>
                 <div className="skills">
-                    <div className="bar-wrapper">
-                        <h3>HTML</h3>
-                        <div className="bar"></div>
-                    </div>
+
+                    <SkillBar name={'HTML'} percent={'90'}/>
+                    <SkillBar name={'JavaScript'} percent={'10'}/>
+                    <SkillBar name={'CSS'} percent={'90'}/>
+                    <SkillBar name={'REACT'} percent={'80'}/>
+                    <SkillBar name={'NEXT Js'} percent={'90'}/>
+                    <SkillBar name={'AWS'} percent={'90'}/>
+                
                 </div>
             </div>
+            
             <div className="image">
                 <img src={image} alt="" />
                 <div className="overlay"></div>
@@ -30,25 +38,30 @@ const About = ({width}) => {
                 margin: 2rem 0;
             }
 
-            .wrapper{
+
+            .info-wrapper{
                 display: grid;
                 ${width>minWidth?'grid-template-columns: 3fr 2fr;':'grid-template-rows: auto 2fr;'}
                 grid-gap: ${width>minWidth?'4':'2'}rem;
             }
             
-            .wrapper img{
+
+            .image{
+                position: relative;
+                border-radius: 1rem;
+                padding: 2rem;
+                background: red;
+            }
+
+            .image img{
                 width: 100%;
                 border-radius: 1rem;
             }
 
-            .image{
-                border-radius: 1rem;
-            }
-
             .overlay{
-                position: relative;
-                top: -100%;
+                position:absolute;
                 left: 0;
+                bottom: 0;
                 border-radius: 1rem;
                 height: 99%;
                 width: 100%;
@@ -76,32 +89,7 @@ const About = ({width}) => {
                 color:var(--gray);
             }
             
-            .bar-wrapper{
-                margin: 1rem;
-                display: grid;
-                grid-gap: .5rem;
-                text-align: center;
-            }
 
-            .bar{
-                width: 100%;
-                height: .5rem;
-                border-radius: .3rem;
-                border: solid .2rem var(--green);
-            }
-
-            .bar::after{
-                position: relative;
-                left: -1px;
-                display: flex;
-                content: "";
-                width: 85%;
-                border: dashed .25rem var(--ligth-green); 
-            }
-            
-            .bar-wrapper h3{
-                color: var(--ligth-green);
-            }
 
         `}</style>
     </div>
