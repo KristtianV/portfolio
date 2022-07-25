@@ -3,7 +3,7 @@ import SkillBar from "./SkillBar";
 
 const About = ({width}) => {
     
-    let minWidth = 800;
+    let minWidth = 1000;
 
     return <div className="about" id="about">
         
@@ -42,30 +42,34 @@ const About = ({width}) => {
             .info-wrapper{
                 display: grid;
                 ${width>minWidth?'grid-template-columns: 3fr 2fr;':'grid-template-rows: auto 2fr;'}
-                grid-gap: ${width>minWidth?'4':'2'}rem;
+                grid-gap: ${width>minWidth?'3':'1'}rem;
+                align-items: center;
+                justify-items: center;
             }
             
 
             .image{
                 position: relative;
                 border-radius: 1rem;
-                padding: 2rem;
-                background: red;
             }
 
             .image img{
                 width: 100%;
+                max-height: 400px;
+                max-width: 400px;
                 border-radius: 1rem;
             }
 
             .overlay{
                 position:absolute;
+                max-height: 400px;
+                max-width: 400px;
                 left: 0;
-                bottom: 0;
+                top:0;
                 border-radius: 1rem;
-                height: 99%;
+                height: 100%;
                 width: 100%;
-                background: rgb(43, 15, 67, .3);;
+                background: rgb(43, 15, 67, .4);
                 opacity: .9;
                 transition: 1s;
                 box-shadow: #2B0F43 10px 10px 0px -3px, #2ECA16 10px 10px;       

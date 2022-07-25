@@ -1,6 +1,5 @@
 const SkillBar = ({name,percent}) => {
     return <div className="bar-wrapper">
-                <h1>{percent}</h1>
                 <h3>{name}</h3>
                 <div className="bar"></div>
         
@@ -25,7 +24,7 @@ const SkillBar = ({name,percent}) => {
                 left: -1px;
                 display: flex;
                 content: "";
-                
+                width: ${percent}%;
                 border: dashed .25rem var(--ligth-green); 
                 transition: width 1s;
             }

@@ -16,6 +16,11 @@ const Header = () => {
 
         <style jsx>{`
 
+            .header{
+                position: fixed;
+                top: 0;
+            }
+
             .top-nav {
                 width: 100%;
                 position: fixed;

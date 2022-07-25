@@ -19,7 +19,6 @@ const App = () => {
     
     return <div className="container">
         
-        <Header/>
 
         <div className="content">
             
@@ -28,7 +27,7 @@ const App = () => {
             <About width={width}/>
 
             <div className="working" id="working">
-                <h2>Working now</h2>
+                <h2>Building now</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt dignissimos nihil et praesentium autem qui delectus error quod consectetur obcaecati suscipit facere, accusamus alias ab, nobis expedita aut temporibus atque.</p>
             </div>
 
@@ -52,6 +51,7 @@ const App = () => {
             </div>
         </div>
         
+        <Header/>
 
         <style jsx>{`
             
