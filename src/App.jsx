@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import About from "./components/About";
 import Proyects from "./components/Proyects";
 import Working from "./components/Working";
+import Contact from "./components/Contact";
 
 
 const App = () => {
@@ -22,19 +23,11 @@ const App = () => {
         
 
         <div className="content">
-            
             <Presentation width={width}/>
-            
             <About width={width}/>
-
             <Proyects width={width}/>
-
             <Working width={width}/>
-
-            <div className="contact" id="contact">
-                <h2>Contact</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt dignissimos nihil et praesentium autem qui delectus error quod consectetur obcaecati suscipit facere, accusamus alias ab, nobis expedita aut temporibus atque.</p>
-            </div>
+            <Contact width={width}/>
         </div>
         
         <Header/>

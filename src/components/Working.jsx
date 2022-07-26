@@ -6,8 +6,8 @@ const Working = () => {
 
         <style jsx>{`
 
-            .container {
-                
+            .working {
+                padding: 6rem 0;
             }
 
         `}</style>

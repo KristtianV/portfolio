@@ -11,7 +11,7 @@ const About = ({width}) => {
         <div className="info-wrapper">
             
             <div className="info">
-                <p>I am a fullstack developer with knowledge of various technologies <a href="/download/HV_CRISTIAN_VEGA.pdf" download>( See all in my downloadable CV )</a> and I have been working with my university since 2020 as a researcher and since 2022 as a fullstack developer on a SpinOff project. <br/><br/> I am self-taught and I learn quickly, very good at teamwork, but with the ability to be a good leader if the situation requires it. I am a very detailed person when it comes to fulfilling my duties and who gives everything of himself to achieve his goals.</p>
+                <p>I am a fullstack developer with knowledge of various technologies <a href="/download/HV_CRISTIAN_VEGA.pdf" download>( See all in my downloadable CV )</a> and I have been working with my university since 2020 as a researcher and since 2022 as a fullstack developer on a university spinoff project. <br/><br/> I am self-taught and I learn quickly, very good at teamwork, but with the ability to be a good leader if the situation requires it. I am a very detailed person when it comes to fulfilling my duties and who gives everything of himself to achieve his goals.</p>
                 <div className="skills">
 
                     <SkillBar name={'HTML'} percent={'92'}/>
@@ -91,7 +91,7 @@ const About = ({width}) => {
 
             .about p{
                 color:var(--gray);
-                line-height: 1.5rem;
+                line-height: 1.3rem;
                 text-align: justify;
             }
 

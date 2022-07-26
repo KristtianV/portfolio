@@ -8,7 +8,7 @@ const Presentation = ({width}) => {
         <h1>Hi, my name is...</h1>
         <h2>Cristian Alexander Vega Mosquera</h2>
         <h3>Web Developer</h3>
-        <p>I am a telecommunications engineering student, with several years of experience as a researcher. I have been a freelancer frontend web developer for two years and a fullstack for a year.</p>
+        <p>I am a telecommunications engineering student, with experience as a researcher. I have been a freelancer frontend web developer for two years and a fullstack for a year.</p>
         <ul>
             <li>
                 <a href="https://www.linkedin.com/in/cristian-alexander-vega-mosquera-0b9773231/">LinkedIn</a>
@@ -74,6 +74,10 @@ const Presentation = ({width}) => {
 
             .presentation h1,.presentation h2,.presentation h3 {
                 text-shadow: 15px 15px 5px #160425;
+            }
+
+            .presentation h1:hover,.presentation h2:hover,.presentation h3:hover {
+                text-shadow: 15px 15px 5px rgb(46, 202, 22, .2);
             }
 
             .presentation li:hover{

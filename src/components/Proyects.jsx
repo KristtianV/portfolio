@@ -30,7 +30,7 @@ const Proyects = ({width}) => {
 
                         <p>It is a project that I carried out as a freelance for a company under construction, which provides services and advice on cybersecurity or computer security tools. My first web page : )</p>  
                         
-                        <label>Date: 16 nov 2020</label>        
+                        <label>Date: Nov 2020</label>        
                             
 
                         

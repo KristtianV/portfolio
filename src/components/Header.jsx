@@ -59,6 +59,8 @@ const Header = () => {
 
             .menu > li {
                 margin: 0 1rem;
+                width: 8rem;
+                text-align: center;
                 overflow: hidden;
             }
 
@@ -111,7 +113,7 @@ const Header = () => {
                 transform: rotate(-405deg);
             }
 
-            @media (max-width: 550px) {
+            @media (max-width: 800px) {
                 .top-nav {
                     height: 4rem;
                     background-color: rgb(43, 15, 67, .8);
