@@ -1,12 +1,12 @@
 const SkillBar = ({name,percent}) => {
-    return <div className="bar-wrapper">
+    return <div className={`bar-wrapper ${name}`}>
                 <h3>{name}</h3>
                 <div className="bar"></div>
         
         <style jsx>{`
 
             .bar-wrapper{
-                margin: 1rem;
+                margin: 1rem 3rem;
                 display: grid;
                 grid-gap: .5rem;
                 text-align: center;
@@ -19,7 +19,7 @@ const SkillBar = ({name,percent}) => {
                 border: solid .2rem var(--green);
             }
 
-            .bar::after{
+            .${name} .bar::after{
                 position: relative;
                 left: -1px;
                 display: flex;

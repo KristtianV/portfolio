@@ -16,6 +16,9 @@ const Presentation = ({width}) => {
             <li>
                 <a href="https://n9.cl/minciencias_cristianvega">CvLac</a>
             </li>
+            <li>
+                <a href="/download/HV_CRISTIAN_VEGA.pdf" download> Download Resume</a>
+            </li>
         </ul>
         <style jsx>{`
             .presentation{
@@ -70,7 +73,7 @@ const Presentation = ({width}) => {
                 color: var(--ligth-green);
             }
 
-            .presentation h1:hover,.presentation h2:hover,.presentation h3:hover {
+            .presentation h1,.presentation h2,.presentation h3 {
                 text-shadow: 15px 15px 5px #160425;
             }
 
@@ -81,6 +84,10 @@ const Presentation = ({width}) => {
 
             .presentation a:hover{
                 color: var(--black-purple)
+            }
+
+            .presentation ul{
+                margin: 1rem 0;
             }
         `}</style>
     </div>

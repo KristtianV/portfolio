@@ -7,26 +7,25 @@ const About = ({width}) => {
 
     return <div className="about" id="about">
         
-        <h2>About Me</h2>
-        
+        <h2>About Me ...</h2>
         <div className="info-wrapper">
             
             <div className="info">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A dolore fugiat quae sapiente atque eligendi dolorum, debitis odio quibusdam accusamus accusantium possimus! Quis quam laboriosam non sunt molestias in illo earum quibusdam, minima sequi, similique soluta cum. Eum assumenda, sunt laboriosam enim placeat non aliquam eius ad deserunt doloribus? Rerum aspernatur laborum at odit corporis inventore totam consequuntur vero officia molestias quod reprehenderit, veritatis dolore ad? Quibusdam reiciendis corrupti quidem unde aperiam. Ratione voluptates pariatur nihil vitae tempore, exercitationem cupiditate accusamus doloremque in quaerat sint, vel aliquam ab? Dignissimos quae quis temporibus modi vero illo sed maxime alias quia facere.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, non. Esse consectetur corporis magni explicabo labore, alias adipisci quae blanditiis? Ex architecto reiciendis neque assumenda in reprehenderit. Aliquid sapiente alias nisi dicta, aut exercitationem doloribus aspernatur tempora nemo quo nulla saepe pariatur enim quibusdam aperiam consequuntur, amet maiores molestias ipsam!</p>
                 <div className="skills">
 
-                    <SkillBar name={'HTML'} percent={'90'}/>
-                    <SkillBar name={'JavaScript'} percent={'10'}/>
-                    <SkillBar name={'CSS'} percent={'90'}/>
-                    <SkillBar name={'REACT'} percent={'80'}/>
-                    <SkillBar name={'NEXT Js'} percent={'90'}/>
-                    <SkillBar name={'AWS'} percent={'90'}/>
+                    <SkillBar name={'HTML'} percent={'92'}/>
+                    <SkillBar name={'CSS'} percent={'88'}/>
+                    <SkillBar name={'JavaScript'} percent={'70'}/>
+                    <SkillBar name={'REACT'} percent={'73'}/>
+                    <SkillBar name={'NextJS'} percent={'90'}/>
+                    <SkillBar name={'AWS'} percent={'60'}/>
                 
                 </div>
             </div>
             
             <div className="image">
-                <img src={image} alt="" />
+                <img src={image} alt="me :)" />
                 <div className="overlay"></div>
             </div>
 
@@ -35,7 +34,7 @@ const About = ({width}) => {
         <style jsx>{`
 
             .about{
-                margin: 2rem 0;
+                padding: 6rem 0;
             }
 
 
@@ -60,7 +59,7 @@ const About = ({width}) => {
                 border-radius: 1rem;
             }
 
-            .overlay{
+            .image .overlay{
                 position:absolute;
                 max-height: 400px;
                 max-width: 400px;
@@ -77,22 +76,21 @@ const About = ({width}) => {
             }
            
 
-            .overlay:hover{
+            .image .overlay:hover{
                 opacity: .1;
                 box-shadow: #2B0F43 0px 0px 0px -3px, #2ECA16 0px 0px;     
             }
 
             .about h2 {
+                font-weight: 800;
                 font-size: 1.5rem;
                 color: var(--ligth-green);
-                transition: .5s;
-                line-height: 3rem;
+                line-height: 4rem;
             }
 
             .about p{
                 color:var(--gray);
             }
-            
 
 
         `}</style>
