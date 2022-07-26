@@ -31,6 +31,7 @@ const SkillBar = ({name,percent}) => {
             
             .bar-wrapper h3{
                 color: var(--ligth-green);
+                line-height: .3rem;
             }
 
         `}</style>

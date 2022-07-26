@@ -1,14 +1,14 @@
 
 const Presentation = ({width}) => {
 
-    let minWidth = 900;
+    let minWidth = 880;
 
     return <div className="presentation" id="presentation">
         
         <h1>Hi, my name is...</h1>
         <h2>Cristian Alexander Vega Mosquera</h2>
         <h3>Web Developer</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt dignissimos nihil et praesentium autem qui delectus error quod consectetur obcaecati suscipit facere, accusamus alias ab, nobis expedita aut temporibus atque.</p>
+        <p>I am a telecommunications engineering student, with several years of experience as a researcher. I have been a freelancer frontend web developer for two years and a fullstack for a year.</p>
         <ul>
             <li>
                 <a href="https://www.linkedin.com/in/cristian-alexander-vega-mosquera-0b9773231/">LinkedIn</a>
@@ -22,6 +22,7 @@ const Presentation = ({width}) => {
         </ul>
         <style jsx>{`
             .presentation{
+                padding-top:1rem; 
                 display: grid;
                 align-content: center;
                 grid-gap: 2rem;
@@ -53,14 +54,12 @@ const Presentation = ({width}) => {
             }
             
             .presentation ul{
-                display: ${width<650?'grid':'flex'};
-                justify-content: center;
+                display: ${width<minWidth?'grid':'flex'};
+                justify-content: space-around;
                 grid-gap: 1rem;
-                transition: 1s;
             }
             .presentation li{
                 width: 200px;    
-                margin: 0 2rem;
                 border: solid 2px var(--green);
                 border-radius: 1rem;
                 text-align: center;
@@ -86,9 +85,6 @@ const Presentation = ({width}) => {
                 color: var(--black-purple)
             }
 
-            .presentation ul{
-                margin: 1rem 0;
-            }
         `}</style>
     </div>
 }

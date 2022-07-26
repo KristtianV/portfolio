@@ -11,15 +11,16 @@ const About = ({width}) => {
         <div className="info-wrapper">
             
             <div className="info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, non. Esse consectetur corporis magni explicabo labore, alias adipisci quae blanditiis? Ex architecto reiciendis neque assumenda in reprehenderit. Aliquid sapiente alias nisi dicta, aut exercitationem doloribus aspernatur tempora nemo quo nulla saepe pariatur enim quibusdam aperiam consequuntur, amet maiores molestias ipsam!</p>
+                <p>I am a fullstack developer with knowledge of various technologies <a href="/download/HV_CRISTIAN_VEGA.pdf" download>( See all in my downloadable CV )</a> and I have been working with my university since 2020 as a researcher and since 2022 as a fullstack developer on a SpinOff project. <br/><br/> I am self-taught and I learn quickly, very good at teamwork, but with the ability to be a good leader if the situation requires it. I am a very detailed person when it comes to fulfilling my duties and who gives everything of himself to achieve his goals.</p>
                 <div className="skills">
 
                     <SkillBar name={'HTML'} percent={'92'}/>
-                    <SkillBar name={'CSS'} percent={'88'}/>
-                    <SkillBar name={'JavaScript'} percent={'70'}/>
+                    <SkillBar name={'CSS'} percent={'90'}/>
+                    <SkillBar name={'JavaScript'} percent={'71'}/>
                     <SkillBar name={'REACT'} percent={'73'}/>
                     <SkillBar name={'NextJS'} percent={'90'}/>
                     <SkillBar name={'AWS'} percent={'60'}/>
+                    <SkillBar name={'ReactNative'} percent={'80'}/>
                 
                 </div>
             </div>
@@ -41,7 +42,7 @@ const About = ({width}) => {
             .info-wrapper{
                 display: grid;
                 ${width>minWidth?'grid-template-columns: 3fr 2fr;':'grid-template-rows: auto 2fr;'}
-                grid-gap: ${width>minWidth?'3':'1'}rem;
+                grid-gap: ${width>minWidth?'2':'1'}rem;
                 align-items: center;
                 justify-items: center;
             }
@@ -90,6 +91,27 @@ const About = ({width}) => {
 
             .about p{
                 color:var(--gray);
+                line-height: 1.5rem;
+                text-align: justify;
+            }
+
+            .about a{
+                display: inline-block;
+                color: var(--ligth-green);
+            }
+
+            .about a::after{
+                content: "";
+                text-align: center;
+                display: block;
+                width: 90%;
+                margin: 0 5%;
+                height: 1px;
+                position: relative;
+                bottom: 0.2em;
+                background-color: var(--ligth-green);
+                transition: 1s;
+                opacity: 0.5;
             }
 
 
