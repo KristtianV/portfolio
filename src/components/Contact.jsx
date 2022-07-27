@@ -44,7 +44,7 @@ const Contact = ({width}) => {
         <style jsx>{`
 
             .contact {
-                padding-top: 6rem;
+                padding: 6rem 0;
                 padding-bottom: 12rem;
                 margin: 0 10%;
             }
@@ -52,7 +52,7 @@ const Contact = ({width}) => {
             .contact-wrapper{
                 display: grid;
                 justify-items: center;
-                grid-gap: 2rem;
+                grid-gap: 7rem;
             }
 
             .contact h2 {

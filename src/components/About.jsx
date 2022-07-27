@@ -1,4 +1,4 @@
-import image from "../img/me.jfif";
+import me from "../img/me.jfif";
 import SkillBar from "./SkillBar";
 
 const About = ({width}) => {
@@ -26,7 +26,7 @@ const About = ({width}) => {
             </div>
             
             <div className="image">
-                <img src={image} alt="me :)" />
+                <img src={me} alt="me :)" />
                 <div className="overlay"></div>
             </div>
 

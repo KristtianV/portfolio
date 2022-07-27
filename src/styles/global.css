@@ -4,12 +4,12 @@
 
 :root {
 	font-family: 'Roboto', sans-serif;
-	--purple: #3a0b62;
-	--dark-purple: #2B0F43;
-	--ligth-green: #c4ff70;
-	--ligth-gray: #e1d7ea31;
-	--gray:#E1D7EA;
-	--green:#2ECA16;
+	--purple: rgb(58, 11, 98);
+	--dark-purple: rgb(43, 15, 67);
+	--ligth-green: rgb(196, 255, 112);
+	--ligth-gray: rgba(225, 215, 234, 0.192);
+	--gray:rgb(225, 215, 234);
+	--green:rgb(46, 202, 22);
 }
 
 ::-webkit-scrollbar {

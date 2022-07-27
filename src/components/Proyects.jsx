@@ -79,7 +79,7 @@ const Proyects = ({width}) => {
                 font-size: 1.5rem;
                 color: var(--ligth-green);
                 transition: .5s;
-                margin: 1rem 0;
+                margin: 2rem 0;
             }
 
             .proyect-wrapper {
