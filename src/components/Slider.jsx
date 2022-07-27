@@ -105,18 +105,18 @@ const Slider = ({width, minWidth}) => {
             .text-slider{
                 display: grid;
                 font-size:  ${width<minWidth?'.8':'1'}rem;
-                background-color: rgb(43, 15, 67, ${width<minWidth?'.9':'.5'});;
+                background-color: rgb(43, 15, 67, .9);
                 color: var(--gray);
-                padding: ${width<minWidth?'.5':'1'}rem;;
+                padding: ${width<minWidth?'.5':'1'}rem;
                 text-align: center;
                 align-items: center;
                 position: absolute;
                 bottom: 0;
                 box-sizing: border-box;
-                border-radius: .5rem;
+                border-radius: 0 0 .5rem .5rem;
                 border: solid .2rem var(--ligth-green);
                 pointer-events: none;
-                width:${width<minWidth?'100%':''};
+                width: 100%;
                 transition: 1s;
             }
 
@@ -150,11 +150,14 @@ const Slider = ({width, minWidth}) => {
             .left{
                 left: 0;
                 border-radius: 1rem 0 0 1rem;
+                ${imgState===0?'display:none':''}
+
             }
 
             .rigth{
                 right: 0;
                 border-radius: 0 1rem 1rem 0;
+                ${imgState===200?'display:none':''}
             }
 
         `}</style>
