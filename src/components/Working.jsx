@@ -20,7 +20,6 @@ const Working = ({width}) => {
 
             .working {
                 padding: 6rem 0;
-                overflow: hidden;
             }
 
             .working h2 {
