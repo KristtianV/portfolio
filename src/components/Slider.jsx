@@ -106,7 +106,6 @@ const Slider = ({width, minWidth}) => {
             .controllers-wrapper button{
                 pointer-events: all;
                 background: none;
-                border: none;
                 outline:noen;
                 cursor: pointer;
                 height: 100%;
@@ -118,15 +117,17 @@ const Slider = ({width, minWidth}) => {
             }
 
             .controllers-wrapper button:hover{
-                background-color: rgb(43, 15, 67, .7);
+                background-color: rgb(196, 255, 112,.2);
             }
 
             .left{
                 left: 0;
+                border-radius: 1rem 0 0 1rem;
             }
 
             .rigth{
                 right: 0;
+                border-radius: 0 1rem 1rem 0;
             }
 
         `}</style>

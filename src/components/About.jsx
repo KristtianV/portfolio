@@ -11,17 +11,20 @@ const About = ({width}) => {
         <div className="info-wrapper">
             
             <div className="info">
-                <p>I am a fullstack developer with knowledge of various technologies <a href="/download/HV_CRISTIAN_VEGA.pdf" download>( See all in my downloadable CV )</a> and I have been working with my university since 2020 as a researcher and since 2022 as a fullstack developer on a university spinoff project. <br/><br/> I am self-taught and I learn quickly, very good at teamwork, but with the ability to be a good leader if the situation requires it. I am a very detailed person when it comes to fulfilling my duties and who gives everything of himself to achieve his goals.</p>
+                <p>I am a fullstack developer with knowledge of various technologies <a href="/download/HV_CRISTIAN_VEGA.pdf" target={"_blank"}>( See all in my downloadable CV )</a> and I have been working with my university since 2020 as a researcher and since 2022 as a fullstack developer on a university spinoff project. <br/><br/> I am self-taught and I learn quickly, very good at teamwork, but with the ability to be a good leader if the situation requires it. I am a very detailed person when it comes to fulfilling my duties and who gives everything of himself to achieve his goals.</p>
                 <div className="skills">
-
-                    <SkillBar name={'HTML'} percent={'92'}/>
-                    <SkillBar name={'CSS'} percent={'90'}/>
-                    <SkillBar name={'JavaScript'} percent={'71'}/>
-                    <SkillBar name={'REACT'} percent={'73'}/>
-                    <SkillBar name={'NextJS'} percent={'90'}/>
-                    <SkillBar name={'AWS'} percent={'60'}/>
+                    <SkillBar name={'HTML-CSS'} percent={'92'}/>
+                    <SkillBar name={'JavaScript'} percent={'75'}/>
+                    <SkillBar name={'ReactJS'} percent={'80'}/>
+                    <SkillBar name={'NextJS'} percent={'85'}/>
                     <SkillBar name={'ReactNative'} percent={'80'}/>
-                
+                    <SkillBar name={'Git'} percent={'80'}/>
+                    <SkillBar name={'Figma'} percent={'75'}/>
+                    <SkillBar name={'Jira'} percent={'85'}/>
+                    <SkillBar name={'MongoDB'} percent={'75'}/>
+                    <SkillBar name={'AWS-Amplify'} percent={'80'}/>
+                    <SkillBar name={'AWS-DynamoDB'} percent={'70'}/>
+                    <SkillBar name={'AWS-Cognito'} percent={'60'}/>
                 </div>
             </div>
             
@@ -114,6 +117,12 @@ const About = ({width}) => {
                 opacity: 0.5;
             }
 
+            .skills{
+                padding: 1rem ${width>minWidth?'0':'1rem'};
+                display: grid;
+                grid-gap: .8rem;
+                ${width>minWidth?'grid-template-columns: 1fr 1fr;':''}                
+            }
 
         `}</style>
     </div>

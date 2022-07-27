@@ -88,6 +88,11 @@ const Contact = ({width}) => {
                 display: grid;
                 justify-items: center;
                 fill:var(--ligth-green);
+                transition: .3s;
+            }
+
+            .contact a:hover{
+                transform: scale(1.3)
             }
 
             .contact svg{

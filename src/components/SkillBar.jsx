@@ -6,7 +6,7 @@ const SkillBar = ({name,percent}) => {
         <style jsx>{`
 
             .bar-wrapper{
-                margin: 1rem 3rem;
+                margin: 0 1rem;
                 display: grid;
                 grid-gap: .5rem;
                 text-align: center;
@@ -31,7 +31,7 @@ const SkillBar = ({name,percent}) => {
             
             .bar-wrapper h3{
                 color: var(--ligth-green);
-                line-height: .3rem;
+                line-height: .5rem;
             }
 
         `}</style>
