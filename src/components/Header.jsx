@@ -1,4 +1,6 @@
-const Header = () => {
+import logo from "../img/logowhite.svg";
+
+const Header = ({width}) => {
     return <nav className="header">
 
             <section className="top-nav">
@@ -6,9 +8,11 @@ const Header = () => {
                 <label className='menu-button-container' htmlFor="menu-toggle">
                     <div className='menu-button'></div>
                 </label>
+                            
                 <ul className="menu">
                     <li><a href="/#about">About</a> </li>
                     <li><a href="/#proyects">Proyects</a></li>
+                    {width>800?<a href="#presentation"><li className="icon"><img src={logo} alt="Logo" /></li></a>:''}
                     <li><a href="/#working">Working now</a></li>
                     <li><a href="/#contact">Contact</a></li>
                 </ul>
@@ -22,6 +26,17 @@ const Header = () => {
                 z-index: 100;
             }
 
+            .header img{
+                width: 3rem;
+                height: 3rem;
+                cursor: pointer;
+                transition: 1s;
+            }
+
+            .header svg:hover{
+                transform: scale(1.5);
+            }
+
             .top-nav {
                 width: 100%;
                 position: fixed;
@@ -29,7 +44,7 @@ const Header = () => {
                 align-items: center;
                 justify-content: space-between;
                 height: 6rem;
-                background-color: rgb(43, 15, 67, .5);
+                background-color: rgb(43, 15, 67, 0);
                 backdrop-filter: blur(5px)
             }
 
@@ -44,7 +59,7 @@ const Header = () => {
                 border: solid 1px var(--green);
                 border-radius: .5rem;
                 padding: 1rem;
-                color: var(--black-purple)
+                color: var(--black-purple);
             }
 
             .menu {
@@ -115,9 +130,9 @@ const Header = () => {
             }
 
             @media (max-width: 800px) {
+
                 .top-nav {
                     height: 4rem;
-                    background-color: rgb(43, 15, 67, .8);
                     backdrop-filter: none;
                 }
                 .menu-button-container {

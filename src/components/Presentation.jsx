@@ -76,10 +76,6 @@ const Presentation = ({width}) => {
                 text-shadow: 15px 15px 5px #160425;
             }
 
-            .presentation h1:hover,.presentation h2:hover,.presentation h3:hover {
-                text-shadow: 15px 15px 5px rgb(46, 202, 22, .2);
-            }
-
             .presentation li:hover{
                 background-color: var(--ligth-green);
                 transform: scale(1.1)
