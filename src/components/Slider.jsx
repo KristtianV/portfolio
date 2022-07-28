@@ -2,6 +2,7 @@ import { useState } from "react";
 import masterImg from "../img/img1.PNG";
 import mapImg from "../img/img2.PNG";
 import empresasImg from "../img/img3.PNG";
+import androidImg from "../img/img6.PNG";
 
 
 const Slider = ({width, minWidth}) => {
@@ -11,7 +12,7 @@ const Slider = ({width, minWidth}) => {
     const handleImgState = (todo) =>{
         switch (todo) {
             case 'next':
-                if (imgState+100<300) {
+                if (imgState+100<400) {
                     setImgState(imgState+100)
                 }
                 break;
@@ -59,6 +60,17 @@ const Slider = ({width, minWidth}) => {
                             </label>
                         </div>
                     </div>
+
+                    <div className="img-wrapper">
+                        <a href="#working">
+                            <img src={androidImg} alt="" />
+                        </a>
+                        <div className="text-slider">
+                            <label>
+                                Mobile app with real-time information with AWS AppSync
+                            </label>
+                        </div>
+                    </div>
                 </div>
 
 
@@ -98,14 +110,21 @@ const Slider = ({width, minWidth}) => {
                 width: 100%;
                 border-radius: .5rem;
                 vertical-align: top;
-                border: solid .3rem var(--ligth-green);
+                border: solid .3rem var(--green);
                 box-sizing: border-box;
+                opacity: .8;
+                transition: 1s;
             }
+
+            .img-wrapper img:hover{
+                opacity: 1;
+            }
+
 
             .text-slider{
                 display: grid;
                 font-size:  ${width<minWidth?'.8':'1'}rem;
-                background-color: rgb(43, 15, 67, .9);
+                background-color: rgb(43, 15, 67, .8);
                 color: var(--gray);
                 padding: ${width<minWidth?'.5':'1'}rem;
                 text-align: center;
@@ -114,7 +133,7 @@ const Slider = ({width, minWidth}) => {
                 bottom: 0;
                 box-sizing: border-box;
                 border-radius: 0 0 .5rem .5rem;
-                border: solid .2rem var(--ligth-green);
+                border: solid .2rem var(--green);
                 pointer-events: none;
                 width: 100%;
                 transition: 1s;
@@ -139,13 +158,14 @@ const Slider = ({width, minWidth}) => {
                 position: absolute;
                 transition: .5s;
                 padding: .5rem;
-                fill: var(--ligth-green);
+                fill: var(--green);
             }
 
             .controllers-wrapper button:hover{
                 background-color: rgb(196, 255, 112,.2);
                 fill: var(--dark-purple);
             }
+
 
             .left{
                 left: 0;
@@ -157,7 +177,7 @@ const Slider = ({width, minWidth}) => {
             .rigth{
                 right: 0;
                 border-radius: 0 1rem 1rem 0;
-                ${imgState===200?'display:none':''}
+                ${imgState===300?'display:none':''}
             }
 
         `}</style>
