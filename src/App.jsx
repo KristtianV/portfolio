@@ -5,7 +5,7 @@ import About from "./components/About";
 import Proyects from "./components/Proyects";
 import Working from "./components/Working";
 import Contact from "./components/Contact";
-import keyboard from "./img/2.png";
+import keyboard from "./img/keyboard.PNG";
 
 
 const App = () => {

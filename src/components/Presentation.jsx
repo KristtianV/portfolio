@@ -1,4 +1,4 @@
-
+import hv from "../download/HV_CRISTIAN_VEGA.pdf"
 const Presentation = ({width}) => {
 
     let minWidth = 880;
@@ -17,7 +17,7 @@ const Presentation = ({width}) => {
                 <a href="https://n9.cl/minciencias_cristianvega">CvLac</a>
             </li>
             <li>
-                <a href="/download/HV_CRISTIAN_VEGA.pdf" download> Download Resume</a>
+                <a href={hv} download> Download Resume</a>
             </li>
         </ul>
         <style jsx>{`

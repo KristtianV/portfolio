@@ -10,11 +10,11 @@ const Header = ({width}) => {
                 </label>
                             
                 <ul className="menu">
-                    <li><a href="/#about">About</a> </li>
-                    <li><a href="/#proyects">Proyects</a></li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#proyects">Proyects</a></li>
                     {width>800?<a href="#presentation"><li className="icon"><img src={logo} alt="Logo" /></li></a>:''}
-                    <li><a href="/#working">Working now</a></li>
-                    <li><a href="/#contact">Contact</a></li>
+                    <li><a href="#working">Working now</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </section>
 
