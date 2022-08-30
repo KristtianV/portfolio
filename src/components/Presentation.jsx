@@ -8,7 +8,7 @@ const Presentation = ({width}) => {
         <h1>Hi, my name is...</h1>
         <h2>Cristian Alexander Vega Mosquera</h2>
         <h3>Web Developer</h3>
-        <p>I am a telecommunications engineering student, with experience as a researcher. I have been a freelancer frontend web developer for two years and a fullstack for a year.</p>
+        <p>I am a telecommunications engineering student, with experience as a researcher. I have been a freelancer ReactJS frontend developer for two years and a fullstack developer with MERN Stack for a year.</p>
         <ul>
             <li>
                 <a href="https://www.linkedin.com/in/cristian-alexander-vega-mosquera-0b9773231/">LinkedIn</a>
