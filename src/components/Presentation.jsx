@@ -7,8 +7,8 @@ const Presentation = ({width}) => {
         
         <h1>Hi, my name is...</h1>
         <h2>Cristian Alexander Vega Mosquera</h2>
-        <h3>Web Developer</h3>
-        <p>I am a telecommunications engineering student, with experience as a researcher. I have been a freelancer ReactJS frontend developer for two years and a fullstack developer with MERN Stack for a year.</p>
+        <h3>Web and Software Developer</h3>
+        <p>I am a telecommunications engineering student, with experience as a researcher. I have been a freelancer ReactJS frontend developer for three years and a fullstack developer with MERN Stack for a year.</p>
         <ul>
             <li>
                 <a href="https://www.linkedin.com/in/cristian-vega-developer">LinkedIn</a>
@@ -17,7 +17,7 @@ const Presentation = ({width}) => {
                 <a href="https://n9.cl/minciencias_cristianvega">CvLac</a>
             </li>
             <li>
-                <a href={hv} download> Download Resume</a>
+                <a href={hv} download>Download Resume</a>
             </li>
         </ul>
         <style jsx>{`
