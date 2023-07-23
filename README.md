@@ -1,3 +1,3 @@
 # Portfolio
 
-Repository created for the development of [My portfolio.](https://www.ejemplo.com)
+Repository created for the development of [My portfolio.](https://kristtianv.github.io/portfolio)
