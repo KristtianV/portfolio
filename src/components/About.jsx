@@ -1,4 +1,4 @@
-import me from "../img/me.jfif";
+import me from "../img/me.jpeg";
 import SkillBar from "./SkillBar";
 import hv from "../download/HV_CRISTIAN_VEGA.pdf"
 
@@ -12,8 +12,7 @@ const About = ({width}) => {
         <div className="info-wrapper">
             
             <div className="info">
-                <p>I am a fullstack developer with knowledge of various technologies <a href={hv} target={"_blank"} rel="noreferrer">( See all in my downloadable CV )</a> and I have been working with Santo Tomás University since 2020 as a researcher and since 2022 as a fullstack developer on a university spinoff project. <br/><br/> I am self-taught and I learn quickly, very good at teamwork, also with the ability to be a good leader when the situation requires it. I am a person who gives everything of himself to achieve his goals.</p>
-                <div className="skills">
+            <p>I am a fullstack developer with knowledge of various technologies <a href={hv} target={"_blank"} rel="noreferrer">( See all in my downloadable CV )</a> I have been working as an independent fullstack developer since 2022 with the Universidad Santo Tomás in a spinoff project and as an IT consultant at BPS Consultores since 2023. <br/><br/> I am self-taught and learn Walking fast, very good at teamwork, also with the ability to be a good leader when the situation requires it. I am a person who gives everything of himself to achieve his goals. </p>                <div className="skills">
                     <SkillBar name={'HTML-CSS'} percent={'92'}/>
                     <SkillBar name={'JavaScript'} percent={'75'}/>
                     <SkillBar name={'ReactJS'} percent={'80'}/>
@@ -26,6 +25,8 @@ const About = ({width}) => {
                     <SkillBar name={'AWS-Amplify'} percent={'80'}/>
                     <SkillBar name={'AWS-DynamoDB'} percent={'70'}/>
                     <SkillBar name={'AWS-Cognito'} percent={'60'}/>
+                    <SkillBar name={'Java'} percent={'60'}/>
+                    <SkillBar name={'SQL'} percent={'40'}/>
                 </div>
             </div>
             

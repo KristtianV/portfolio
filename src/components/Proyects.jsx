@@ -8,7 +8,7 @@ const Proyects = ({width}) => {
 
     return <div className="proyects" id="proyects">
                     
-                <h2>Some Projects I Have Done ...</h2>
+                <h2>Some projects I've done as an independent developer ...</h2>
 
                 <div className="proyect-wrapper">             
                         
