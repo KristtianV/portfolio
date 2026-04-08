@@ -1,5 +1,6 @@
 import aseguralosImg from "../img/img4.PNG";
 import ustaImg from "../img/img5.PNG";
+import bpsImg from "../img/img7.png";
 
 
 const Proyects = ({width}) => {
@@ -8,29 +9,29 @@ const Proyects = ({width}) => {
 
     return <div className="proyects" id="proyects">
                     
-                <h2>Some projects I've done as an independent developer ...</h2>
+                <h2>Some projects I've done as developer ...</h2>
 
                 <div className="proyect-wrapper">             
                         
-                    <a className="img-link" href="https://aseguralos.web.app">
-                        <img src={aseguralosImg} alt="Aseguralos" />
+                    <a className="img-link" href="https://bpsconsultores.com/">
+                        <img src={bpsImg} alt="BPSConsultores" />
                         <div className="overlay">Click To Go</div>
                     </a>
 
                     <div className="summary-wrapper">
 
-                        <h3>ASEGURALOS</h3>
+                        <h3>Bps Consultores</h3>
 
                         <ul className="list-tec">
-                            <li>HTML</li>
-                            <li>CSS</li>
+                            <li>Slack</li>
+                            <li>Next.js</li>
                             <li>JS</li>
-                            <li>FireBase</li>
+                            <li>React JS</li>
                         </ul> 
 
-                        <p>It is a project that I carried out as a freelance for a company under construction, which provides services and advice on cybersecurity or computer security tools. My first web page : )</p>  
+                        <p>Provided support in the development and maintenance of the corporate website for BPS Consultores, a consulting and IT services firm.</p>  
                         
-                        <label>Date: Nov 2020</label>        
+                        <label>Date: Sep 2025</label>        
                             
 
                         
@@ -66,6 +67,34 @@ const Proyects = ({width}) => {
                 
                 </div>
 
+                <div className="proyect-wrapper">             
+                        
+                    <a className="img-link" href="https://aseguralos.web.app">
+                        <img src={aseguralosImg} alt="Aseguralos" />
+                        <div className="overlay">Click To Go</div>
+                    </a>
+
+                    <div className="summary-wrapper">
+
+                        <h3>ASEGURALOS</h3>
+
+                        <ul className="list-tec">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS</li>
+                            <li>FireBase</li>
+                        </ul> 
+
+                        <p>It is a project that I carried out as a freelance for a company under construction, which provides services and advice on cybersecurity or computer security tools. My first web page : )</p>  
+                        
+                        <label>Date: Nov 2020</label>        
+                            
+
+                        
+                    </div>
+                
+                </div>
+
                 
         <style jsx>{`
 
@@ -97,6 +126,7 @@ const Proyects = ({width}) => {
                 text-align: right;
                 grid-gap: 2rem;
                 align-items: center;
+                margin-bottom: 5rem;
             }
 
             .summary-wrapper h3{

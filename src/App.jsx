@@ -26,8 +26,8 @@ const App = () => {
         <div className="content">
             <Presentation width={width}/>
             <About width={width}/>
-            <Working width={width}/>
             <Proyects width={width}/>
+            <Working width={width}/>
             <Contact width={width}/>
         </div>
         
